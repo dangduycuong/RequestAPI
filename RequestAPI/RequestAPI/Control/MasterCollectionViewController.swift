@@ -57,7 +57,6 @@ class MasterCollectionViewController: UICollectionViewController {
                     self.tempUser.append(totalUser![i])
                 }
             }
-//            destination.data = arrImage[(indexPath?.row)!]
             destination.receivedUser = tempUser
         }
     }
