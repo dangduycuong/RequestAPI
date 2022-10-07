@@ -17,6 +17,8 @@
 		5E6987F222E7DE81009AD1B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6987F022E7DE81009AD1B3 /* LaunchScreen.storyboard */; };
 		5E6987FB22E7DEA3009AD1B3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6987FA22E7DEA3009AD1B3 /* Model.swift */; };
 		5E6987FE22E7DF30009AD1B3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6987FD22E7DF30009AD1B3 /* DataService.swift */; };
+		FA2CAE6628EFE1BE00B815BD /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CAE6528EFE1BE00B815BD /* Data+Extension.swift */; };
+		FA2CAE6828EFFFA500B815BD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2CAE6728EFFFA500B815BD /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5E6987F322E7DE81009AD1B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E6987FA22E7DEA3009AD1B3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		5E6987FD22E7DF30009AD1B3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		FA2CAE6528EFE1BE00B815BD /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		FA2CAE6728EFFFA500B815BD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 		5E6987E622E7DE7D009AD1B3 /* RequestAPI */ = {
 			isa = PBXGroup;
 			children = (
+				FA2CAE6328EFE18D00B815BD /* Shared */,
 				5E6987E722E7DE7D009AD1B3 /* AppDelegate.swift */,
 				5E29343C22E860BE00049A8F /* View */,
 				5E29343922E8609200049A8F /* Control */,
@@ -109,6 +114,23 @@
 				5E6987FD22E7DF30009AD1B3 /* DataService.swift */,
 			);
 			path = NetWork;
+			sourceTree = "<group>";
+		};
+		FA2CAE6328EFE18D00B815BD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FA2CAE6428EFE19300B815BD /* Extension */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FA2CAE6428EFE19300B815BD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA2CAE6528EFE1BE00B815BD /* Data+Extension.swift */,
+				FA2CAE6728EFFFA500B815BD /* UIView+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +205,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E29344422E8611400049A8F /* DetailTableViewController.swift in Sources */,
+				FA2CAE6628EFE1BE00B815BD /* Data+Extension.swift in Sources */,
 				5E29343E22E860D000049A8F /* MasterCollectionViewCell.swift in Sources */,
+				FA2CAE6828EFFFA500B815BD /* UIView+Extension.swift in Sources */,
 				5E6987FB22E7DEA3009AD1B3 /* Model.swift in Sources */,
 				5E29344222E860FA00049A8F /* MasterCollectionViewController.swift in Sources */,
 				5E6987E822E7DE7D009AD1B3 /* AppDelegate.swift in Sources */,

@@ -81,12 +81,7 @@ class MasterCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        if displayUserID.count == nil {
-            return 0
-        } else {
-            return displayUserID.count
-        }
-        
+        return displayUserID.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
